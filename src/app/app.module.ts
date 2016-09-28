@@ -5,12 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { MdToolbarModule } from '@angular2-material/toolbar';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
+    MdToolbarModule.forRoot(),
     FormsModule,
     HttpModule
   ],
