@@ -10,11 +10,13 @@ import { FormPreCadastroComponent } from './shared/form-pre-cadastro/form-pre-ca
 import { MdInputModule } from '@angular2-material/input';
 import { MdCardModule } from '@angular2-material/card';
 import { MdButtonModule } from '@angular2-material/button';
+import { ToolbarHomeComponent } from './shared/toolbar-home/toolbar-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormPreCadastroComponent
+    FormPreCadastroComponent,
+    ToolbarHomeComponent
   ],
   imports: [
     BrowserModule,
