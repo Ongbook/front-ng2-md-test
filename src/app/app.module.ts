@@ -10,7 +10,11 @@ import { FormPreCadastroComponent } from './shared/form-pre-cadastro/form-pre-ca
 import { MdInputModule } from '@angular2-material/input';
 import { MdCardModule } from '@angular2-material/card';
 import { MdButtonModule } from '@angular2-material/button';
+
 import { ToolbarHomeComponent } from './shared/toolbar-home/toolbar-home.component';
+
+import { MdIconModule } from '@angular2-material/icon';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +27,7 @@ import { ToolbarHomeComponent } from './shared/toolbar-home/toolbar-home.compone
     MdButtonModule.forRoot(),
     MdToolbarModule.forRoot(),
     MdInputModule.forRoot(),
+    MdIconModule.forRoot(),
     MdCardModule.forRoot(),
     FormsModule,
     HttpModule
