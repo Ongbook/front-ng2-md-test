@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormGroup, FormBuilder } from '@angular/forms';
+import { EmailValidator } from '../../../assets/validators/email.validator';
 
 @Component({
   selector: 'app-form-pre-cadastro',
@@ -12,21 +13,16 @@ export class FormPreCadastroComponent implements OnInit {
 
 
   constructor(private _fb: FormBuilder) {
-
-
   }
-
 
   preCadastro(json){
     console.log(json.value);
   }
 
-
   ngOnInit() {
-
     this.preCadastroForm = this._fb.group({
       nome: ['', [Validators.required, Validators.minLength(3)]],
-      email: ['', [Validators.required] ]
+      email: ['', [Validators.required, EmailValidator.validate] ]
     });
 
   }

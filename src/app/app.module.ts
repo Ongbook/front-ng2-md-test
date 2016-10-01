@@ -14,13 +14,15 @@ import { MdButtonModule } from '@angular2-material/button';
 import { ToolbarHomeComponent } from './shared/toolbar-home/toolbar-home.component';
 
 import { MdIconModule } from '@angular2-material/icon';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FormPreCadastroComponent,
-    ToolbarHomeComponent
+    ToolbarHomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
