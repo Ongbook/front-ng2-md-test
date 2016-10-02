@@ -10,6 +10,7 @@ import { MdButtonModule } from '@angular2-material/button';
 import { MdCardModule } from '@angular2-material/card';
 import { MdIconModule } from '@angular2-material/icon';
 import { MdInputModule } from '@angular2-material/input';
+import { MdMenuModule } from '@angular2-material/menu';
 import { MdToolbarModule } from '@angular2-material/toolbar';
 
 import { HomeComponent } from './home/home.component';
@@ -37,10 +38,11 @@ export const firebaseConfig = {
   imports: [
     BrowserModule,
     MdButtonModule.forRoot(),
-    MdToolbarModule.forRoot(),
-    MdInputModule.forRoot(),
-    MdIconModule.forRoot(),
     MdCardModule.forRoot(),
+    MdIconModule.forRoot(),
+    MdInputModule.forRoot(),
+    MdMenuModule.forRoot(),
+    MdToolbarModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     HttpModule,

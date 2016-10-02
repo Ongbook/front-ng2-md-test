@@ -1,40 +1,44 @@
-<p>
-  <i class="material-icons md-48 orange600">menu</i>
-  form-pre-cadastro works!
-  <md-icon>pets</md-icon>
-</p>
+<div class="component-content">
 
-<md-card class="demo-card demo-basic">
-  <md-toolbar color="primary">Dados do Responsável</md-toolbar>
-  <md-card-content>
+  <p>
+    <i class="material-icons md-48 orange600">menu</i>
+    form-pre-cadastro works!
+    <md-icon>pets</md-icon>
+  </p>
 
-    <form [formGroup]="preCadastroForm" (ngSubmit)="preCadastro(preCadastroForm)" novalidate>
-      <table cellspacing="0">
-        <tr>
-          <td>
-            <md-input type="text" formControlName="nome" placeholder="Nome"></md-input>
-            <small *ngIf="!preCadastroForm.controls.nome.valid" class="error-input">
-              Nome é obrigatório (Mínimo 3 caracteres).
-            </small>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <md-input type="email" formControlName="email" placeholder="E-mail"></md-input>
-            <div id="dpy-msg-erro-email">
-              <small *ngIf="!preCadastroForm.controls.email.valid" class="error-input">
-                Email também é obrigatório.
+  <md-card class="demo-card demo-basic">
+    <md-toolbar color="primary">Dados do Responsável</md-toolbar>
+    <md-card-content>
+
+      <form [formGroup]="preCadastroForm" (ngSubmit)="preCadastro(preCadastroForm)" novalidate>
+        <table cellspacing="0">
+          <tr>
+            <td>
+              <md-input type="text" formControlName="nome" placeholder="Nome"></md-input>
+              <small *ngIf="!preCadastroForm.controls.nome.valid" class="error-input">
+                Nome é obrigatório (Mínimo 3 caracteres).
               </small>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <button type="submit" md-raised-button md-tooltip="This is a tooltip!" [disabled]="!preCadastroForm.valid">Enviar</button>
-          </td>
-        </tr>
-      </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <md-input type="email" formControlName="email" placeholder="E-mail"></md-input>
+              <div id="dpy-wdt-msg-erro-email">
+                <small *ngIf="!preCadastroForm.controls.email.valid" class="error-input">
+                  Email também é obrigatório.
+                </small>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit" md-raised-button md-tooltip="This is a tooltip!" [disabled]="!preCadastroForm.valid">Enviar</button>
+            </td>
+          </tr>
+        </table>
 
-    </form>
-  </md-card-content>
-</md-card>
+      </form>
+    </md-card-content>
+  </md-card>
+
+</div>
