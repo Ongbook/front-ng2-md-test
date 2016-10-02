@@ -1,6 +1,7 @@
 <p>
   <i class="material-icons md-48 orange600">menu</i>
   form-pre-cadastro works!
+  <md-icon>pets</md-icon>
 </p>
 
 <md-card class="demo-card demo-basic">
@@ -12,17 +13,19 @@
         <tr>
           <td>
             <md-input type="text" formControlName="nome" placeholder="Nome"></md-input>
-            <small *ngIf="!preCadastroForm.controls.nome.valid" class="text-danger">
-              Nome é obrigatório (Mínimo 5 caracteres).
+            <small *ngIf="!preCadastroForm.controls.nome.valid" class="error-input">
+              Nome é obrigatório (Mínimo 3 caracteres).
             </small>
           </td>
         </tr>
         <tr>
           <td>
-            <md-input type="email" formControlName="email" placeholder="E-mail" required></md-input>
-            <small *ngIf="!preCadastroForm.controls.email.valid" class="text-danger">
-              Email também é obrigatório.
-            </small>
+            <md-input type="email" formControlName="email" placeholder="E-mail"></md-input>
+            <div id="dpy-msg-erro-email">
+              <small *ngIf="!preCadastroForm.controls.email.valid" class="error-input">
+                Email também é obrigatório.
+              </small>
+            </div>
           </td>
         </tr>
         <tr>

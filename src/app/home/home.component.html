@@ -1,3 +1,13 @@
+<h1>{{ item | async | json }}</h1>
+
+<input type="text" #newname placeholder="Name" />
+<input type="text" #newsize placeholder="Size" />
+<br />
+<button (click)="save(newname.value,newsize.value)">Set Name</button>
+<button (click)="update(newsize.value)">Update Size</button>
+<button (click)="delete()">Delete</button>
+
+
 <p>
   home works!
 </p>
