@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 
+import { Routers } from './app.routes';
 import { AppComponent } from './app.component';
 
 import { MdButtonModule } from '@angular2-material/button';
@@ -14,6 +15,9 @@ import { MdMenuModule } from '@angular2-material/menu';
 import { MdToolbarModule } from '@angular2-material/toolbar';
 
 import { HomeComponent } from './home/home.component';
+import { PreCadastroComponent } from './home/pre-cadastro/pre-cadastro.component';
+import { CausaComponent } from './home/causa/causa.component';
+import { CadastreSeComponent } from './home/cadastre-se/cadastre-se.component';
 
 import { FormPreCadastroComponent } from './shared/form-pre-cadastro/form-pre-cadastro.component';
 import { ToolbarHomeComponent } from './shared/toolbar-home/toolbar-home.component';
@@ -33,7 +37,10 @@ export const firebaseConfig = {
     AppComponent,
     FormPreCadastroComponent,
     ToolbarHomeComponent,
-    HomeComponent
+    HomeComponent,
+    PreCadastroComponent,
+    CausaComponent,
+    CadastreSeComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +52,7 @@ export const firebaseConfig = {
     MdToolbarModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    Routers,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],

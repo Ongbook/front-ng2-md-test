@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { ToolbarHomeComponent } from './toolbar-home.component';
+import { CadastreSeComponent } from './cadastre-se.component';
 
-describe('Component: ToolbarHome', () => {
+describe('Component: CadastreSe', () => {
   it('should create an instance', () => {
-    let component = new ToolbarHomeComponent();
+    let component = new CadastreSeComponent();
     expect(component).toBeTruthy();
   });
 });

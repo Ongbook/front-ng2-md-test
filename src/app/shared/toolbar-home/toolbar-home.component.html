@@ -1,27 +1,13 @@
 <md-toolbar color="primary">
 
-  <i class="material-icons">location_on</i><span id="title">{{title}}</span>
+  <i class="material-icons">location_on</i><span id="title" [routerLink]="['/']">{{title}}</span>
 
   <nav>
 
-    <button md-button> Atua em alguma ONG? </button>
-    <button md-button> O que </button>
-    <button md-button> Apoie </button>
-
-    <button md-button [md-menu-trigger-for]="menu">
-      Cadastre-se
-    </button>
+    <button md-button [routerLink]="['/preCadastroEntidades']"> Atua em alguma ONG? </button>
+    <button md-button [routerLink]="['/nossaCausa']"> Nossa Causa </button>
+    <button md-button [routerLink]="['/cadastre']"> Cadastre-se </button>
 
   </nav>
-
-
-  <md-menu y-position="above" role="menu" #menu="mdMenu">
-    <button md-menu-item role="menuitem" disabled><small>Pessoas físicas</small></button>
-    <button md-menu-item role="menuitem"> Solidário </button>
-    <button md-menu-item role="menuitem" disabled><small>Entidades Sociais</small></button>
-    <button md-menu-item role="menuitem"> Necessitadas </button>
-    <button md-menu-item role="menuitem" disabled><small>Parceiros</small></button>
-    <button md-menu-item role="menuitem"> Entre em contato </button>
-  </md-menu>
 
 </md-toolbar>

@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { ToolbarHomeComponent } from './toolbar-home.component';
+import { PreCadastroComponent } from './pre-cadastro.component';
 
-describe('Component: ToolbarHome', () => {
+describe('Component: PreCadastro', () => {
   it('should create an instance', () => {
-    let component = new ToolbarHomeComponent();
+    let component = new PreCadastroComponent();
     expect(component).toBeTruthy();
   });
 });
