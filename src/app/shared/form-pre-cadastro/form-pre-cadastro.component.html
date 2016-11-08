@@ -41,4 +41,21 @@
     </md-card-content>
   </md-card>
 
+  <share-buttons
+  [shareTitle]="'Compartilhe o seu perfil solidário'"
+  [url]="'https://facebook.com/edoura'"
+  [count]="true"
+
+  [pinterest]="false"
+  [tumblr]="false"
+  [reddit]="false"
+  [stumbleUpOn]="false"
+
+  ></share-buttons>
+
 </div>
+
+<share-button [button]='faceButton' [description]="description" [image]="image"></share-button>
+<share-button [button]='twitterButton' [description]="description" [tags]="tags"></share-button>
+<share-button [button]='lkButton' [description]="description" [image]="image"></share-button>
+<share-button [button]='gButton' [description]="description" [image]="image"></share-button>

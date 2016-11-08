@@ -12,6 +12,7 @@ import { MdCardModule } from '@angular2-material/card';
 import { MdIconModule } from '@angular2-material/icon';
 import { MdInputModule } from '@angular2-material/input';
 import { MdMenuModule } from '@angular2-material/menu';
+import { MdTabsModule } from '@angular2-material/tabs';
 import { MdToolbarModule } from '@angular2-material/toolbar';
 
 import { HomeComponent } from './home/home.component';
@@ -19,8 +20,11 @@ import { PreCadastroComponent } from './home/pre-cadastro/pre-cadastro.component
 import { CausaComponent } from './home/causa/causa.component';
 import { CadastreSeComponent } from './home/cadastre-se/cadastre-se.component';
 
-import { FormPreCadastroComponent } from './shared/form-pre-cadastro/form-pre-cadastro.component';
+// Shared component
 import { ToolbarHomeComponent } from './shared/toolbar-home/toolbar-home.component';
+import { FormPreCadastroComponent } from './shared/form-pre-cadastro/form-pre-cadastro.component';
+
+import {ShareButtonsModule} from "ng2-sharebuttons";
 
 // Must export the config
 export const firebaseConfig = {
@@ -49,11 +53,13 @@ export const firebaseConfig = {
     MdIconModule.forRoot(),
     MdInputModule.forRoot(),
     MdMenuModule.forRoot(),
+    MdTabsModule.forRoot(),
     MdToolbarModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     Routers,
     HttpModule,
+    ShareButtonsModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
